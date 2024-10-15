@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 
-const bodyFont = localFont({
-  src: [
-    { 
-      path: "./fonts/TT-firs-Text-Trial-Bold.ttf",
-      weight: "500"
-    }
-  ]
-});
-const headerFont = localFont({
-  src: [
-    { 
-      path: "./fonts/LTSuperior-Bold.ttf",
-      weight: "900"
-    }
-  ]
-});
+// const bodyFont = localFont({
+//   src: [
+//     { 
+//       path: "./fonts/TT-firs-Text-Trial-Bold.ttf",
+//       weight: "500"
+//     }
+//   ]
+// });
+// const headerFont = localFont({
+//   src: [
+//     { 
+//       path: "./fonts/LTSuperior-Bold.ttf",
+//       weight: "900"
+//     }
+//   ]
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bodyFont.className} ${headerFont.className}`}>
+      <body className={`className`} >
         {children}
       </body>
     </html>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import wyslacLogo from './assets/wyslac-logo.png'
 import dashboard from './assets/dashboard-pic.png'
 import CountryFlag from './assets/countryFlag.png'
+import BorderFinance from './components/borderFinance'
 import WyslacFeatures from './components/wyslacFeatures'
 import styles from './page.module.css';
 
@@ -74,19 +75,16 @@ export default function Home() {
                     Our platform provides everything you need to succeed in today’s fast-moving global market.</div>
                 <WyslacFeatures />
             </div>
-            <div className={styles.wysalcScroll}>
+            <div className={styles.wyslacScroll}>
                 Discover a financial solution that outshines traditional banks—combining strength and elegance in one seamless service. 
                 Enjoy a powerful, refined experience with features that break free from the limits of conventional banking.
             </div>
-            <div className={styles.wyslacBorderFinance}>
-                <div className={styles.wyslacBorderFinanceHeader}>Better than your traditional bank Robust & Elegant.</div>
-                <div className={styles.wyslacp}>Equipped with cutting-edge features designed to simplify life for your finance team and create a seamless experience for your business. 
-                    Our platform offers secure, effortless transactions through an intuitive interface built to enhance every step.</div>
-                <div className="wyslac-border-finance-image">
-                    <Image src="" alt="" />
-                </div>
+            <BorderFinance />
+            <div>
+                
             </div>
-        </div>
-    
+        </div> 
   );
 }
+
+

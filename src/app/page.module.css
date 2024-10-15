@@ -1,10 +1,10 @@
-.body {
+/* .body {
   background: url('./assets/background-color.png') 
     0% 0% 
     no-repeat;
-}
+} */
 .page {
-  
+  width: 1440px;
   opacity: 1;
   margin: 20px 200px;
   display: flex;
@@ -166,4 +166,37 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Wyslac Scroll */
+
+.wyslacScroll {
+  width: 700px;
+  display: flex;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/* Wyslac border Finance */
+
+.borderFinance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.borderFinanceHeader {
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.borderFinancep {
+  top: 4529px;
+  left: 674px;
+  width: 570px;
+  height: 102px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000A4A;
+  opacity: 0.6;
 }
