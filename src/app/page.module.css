@@ -1,16 +1,19 @@
 
  .main {
   background-color: #f9f9f9;
-  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
   background: url('./assets/background-color.png')
+    -0% -1%
     no-repeat;
+
   background-size: contain;
 
  }
 .page {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
+  width: 100%;
   opacity: 1;
   display: flex;
   flex-direction: column;
