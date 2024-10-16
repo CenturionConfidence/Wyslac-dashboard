@@ -1,7 +1,6 @@
 
 .page {
-  width: 1440px;
-  opacity: 1;
+  max-width: 1440px;
   text-align: left;
   display: flex;
   flex-direction: column;
