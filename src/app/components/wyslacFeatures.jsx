@@ -5,7 +5,7 @@ import Image from 'next/image'
 import styles from '../page.module.css';
 import Fast from '../assets/fast.png'
 import Currency from '../assets/currrency.png'
-import Easy1 from '../assets/easy1.png'
+// import Easy1 from '../assets/easy1.png'
 import Easy from '../assets/easy.png'
 import dashboard from '../assets/Group 52728.png'
 
