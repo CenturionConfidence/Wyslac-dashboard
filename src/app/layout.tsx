@@ -13,7 +13,7 @@ const bodyFont = localFont({
 const headerFont = localFont({
   src: [
     { 
-      path: "./fonts/LTSuperior-Bold.ttf",
+      path: "./fonts/LTSuperior-Bold.otf",
       weight: "900"
     }
   ]
