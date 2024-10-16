@@ -2,12 +2,17 @@ import Image from 'next/image'
 import financeImage1 from '../assets/Mask Group 252.png'
 import financeImage2 from '../assets/Mask Group 253.png'
 import financeImage3 from '../assets/Mask Group 255.png'
+import heroCaptionImage1 from '../assets/Rectangle 7262-1.png'
 
 import styles from '../page.module.css'
 
 export default function BorderFinance () {
     return(
         <>
+            <div className={styles.Caption}>
+                    <Image src={heroCaptionImage1} alt='hero-caption'/>
+                    <div className={styles.heroCaptionTitle}>Cross-border finance</div>
+            </div>
             <div className={styles.borderFinance}>
                 <div className={styles.borderFinanceHeader}>Better than your traditional bank Robust & Elegant.</div>
                 <div className={styles.borderFinancep}>Equipped with cutting-edge features designed to simplify life for your finance team and create a seamless experience for your business. 

@@ -2,13 +2,18 @@ import Image from 'next/image'
 import wyslacLogo from './assets/wyslac-logo.png'
 import dashboard from './assets/dashboard-pic.png'
 import CountryFlag from './assets/countryFlag.png'
+import heroCaptionImage from './assets/Group 23.png'
+// import demoUi from './assets/Mask Group 269.png'
+
 import BorderFinance from './components/borderFinance'
+import Testimonials from './components/testimonials'
 import WyslacFeatures from './components/wyslacFeatures'
+import BlogSection from './components/blogs'
+import Footer from './components/footer'
+
 import styles from './page.module.css';
 
 export default function Home() {
-  
-            
       const ImageSrc = <Image src={CountryFlag} alt="Country-flag" />
        const stats = [
         {
@@ -31,6 +36,7 @@ export default function Home() {
 
 
     return (
+        <main className={styles.main}>
         <div className={styles.page}>
             <div className={styles.nav}> 
               <Image src={wyslacLogo} alt="wyslac Logo" />
@@ -40,6 +46,10 @@ export default function Home() {
                 </div>
             </div>
             <div className={styles.hero}>
+                <div className={styles.heroCaption}>
+                    <Image src={heroCaptionImage} alt='hero-caption'/>
+                    <div className={styles.heroCaptionTitle}>Cross-border finance</div>
+                </div>
                 <h1 className={styles.heroHeader}>Pay your supplies in over 100 countries {ImageSrc} with wyslac</h1>
                 <div className={styles.wyslacp}>Expand your business reach by making international payment, ensuring 
                     your suppliers recieve funds promptly, no matter where they are located.
@@ -69,6 +79,9 @@ export default function Home() {
                           </div>
                       })}
                 </div>
+
+                {/* Wyslac Features */}
+
             <div className={styles.wyslacFeatures}>
                 <div className={styles.wyslacFeaturesHeader}>Powerful features to elevate your business</div>
                 <div className={styles.wyslacFeaturesp}>Access a powerful set of tools built to simplify your workflow, boost productivity, and fuel business growth. 
@@ -80,10 +93,27 @@ export default function Home() {
                 Enjoy a powerful, refined experience with features that break free from the limits of conventional banking.
             </div>
             <BorderFinance />
-            <div>
-                
+            <Testimonials />
+            <BlogSection />
+            <div className={styles.demoSection}>
+                <div className={styles.demoSectionContent}>
+                    <div className={styles.demoSectionContentIntro}>GET STARTED</div>
+                    <div className={styles.demoSectionContentTitle}>Hassle free transactions</div>
+                    <div className={styles.demoSectionContentp}>
+                    Ready to transform your business? Request a demo today and experience
+                    the ease our platform brings to your financial operations.
+                    </div>
+                    <button className={styles.demoSectionContentButton}>
+                    Request a Demo <span>&#8594;</span>
+                    </button>
+                </div>
+                {/* <div className={styles.demoImage}>
+                    <Image src={demoUi} alt="Demo UI"/>
+                </div> */}
             </div>
+            <Footer />
         </div> 
+    </main>
   );
 }
 
