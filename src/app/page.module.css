@@ -1,16 +1,12 @@
 
  .main {
-  
-  
-  background: url('./assets/background-color.png')
-    no-repeat;
-
+    
+ 
  }
 .page {
   width: 1440px;
   opacity: 1;
   text-align: left;
-  
 }
 
 /* Navigation for website bigger screen */
