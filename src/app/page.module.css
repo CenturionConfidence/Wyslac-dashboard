@@ -1,18 +1,13 @@
 
- .main {
-  width: 100%;
-  background: url('./assets/background-color.png')
-    no-repeat;
-  padding: 100px;
-  background-size: contain;
-  margin: 0;
-    
- 
- }
 .page {
   width: 1440px;
   opacity: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;  /* For long text */
+  overflow-x: hidden; 
 }
 
 /* Navigation for website bigger screen */
