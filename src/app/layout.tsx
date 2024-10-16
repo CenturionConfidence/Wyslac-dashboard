@@ -3,13 +3,20 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const bodyFont = localFont({
-  src: "./fonts/TT-firs-Text-Trial-Bold.ttf",
-  variable: "--body-font",
-  weight: "100 500"
+  src: [
+    { 
+      path: "./fonts/TT-firs-Text-Trial-Bold.ttf",
+      weight: "500"
+    }
+  ]
 });
 const headerFont = localFont({
-  src: "./fonts/LTSuperior-Bold.otf",
-  weight: "900"
+  src: [
+    { 
+      path: "./fonts/LTSuperior-Bold.otf",
+      weight: "900"
+    }
+  ]
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bodyFont.className}`} >
+      <body className={`${headerFont.className}`} >
         {children}
       </body>
     </html>

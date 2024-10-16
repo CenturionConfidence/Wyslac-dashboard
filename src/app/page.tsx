@@ -96,18 +96,20 @@ export default function Home() {
 
                 {/* Wyslac Features */}
 
-            <Image 
-                className={styles.featuresGraffiti}
-                src={graffitiImage1} 
-                alt='hero-caption'/>
-            <div className={styles.featureCaption}>
-                    <Image src={heroCaptionImage} alt='hero-caption'/>
-                    <div className={styles.heroCaptionTitle}>Cross-border finance</div>
-            </div>
-            <div className={styles.wyslacFeatures}>
-                <div className={styles.wyslacFeaturesHeader}>Powerful features to elevate your business</div>
-                <div className={styles.wyslacFeaturesp}>Access a powerful set of tools built to simplify your workflow, boost productivity, and fuel business growth. 
-                    Our platform provides everything you need to succeed in today’s fast-moving global market.</div>
+                <div className={styles.featuresHead}>
+                    <Image 
+                        className={styles.featuresGraffiti}
+                        src={graffitiImage1} 
+                        alt='hero-caption'/>
+                    <div className={styles.featureCaption}>
+                        <Image src={heroCaptionImage} alt='hero-caption'/>
+                        <div className={styles.heroCaptionTitle}>Cross-border finance</div>
+                    </div>
+                    <div className={styles.wyslacFeatures}>
+                    <div className={styles.wyslacFeaturesHeader}>Powerful features to elevate your business</div>
+                    <div className={styles.wyslacFeaturesp}>Access a powerful set of tools built to simplify your workflow, boost productivity, and fuel business growth. 
+                        Our platform provides everything you need to succeed in today’s fast-moving global market.</div>
+                </div>
                 <WyslacFeatures />
             </div>
             <div className={styles.wyslacScroll}>

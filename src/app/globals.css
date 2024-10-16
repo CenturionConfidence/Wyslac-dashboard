@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/LTSuperior-Bold.otf') format('otf'),
+         url('/fonts/TT-firs-Text-Trial-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body {
+   font-family: 'MyCustomFont';
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  }

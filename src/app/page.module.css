@@ -1,22 +1,16 @@
 
  .main {
-  background-color: #f9f9f9;
-  padding-left: 100px;
-  padding-right: 100px;
+  
+  
   background: url('./assets/background-color.png')
-    -0% -1%
     no-repeat;
-
-  background-size: contain;
 
  }
 .page {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  width: 1440px;
   opacity: 1;
-  display: flex;
-  flex-direction: column;
+  text-align: left;
+  
 }
 
 /* Navigation for website bigger screen */
@@ -148,6 +142,11 @@
 
 /* Wyslac Features */
 
+.featuresHead {
+  display: flex;
+  flex-direction: column;
+}
+
 .featuresGraffiti {
   margin-left: auto;
   margin-right: auto;
@@ -183,29 +182,102 @@
   text-align: center;
   opacity: 0.6;
 }
-.wyslacFeaturesContainer {
+/* components/Tabs.module.css */
+.tabContainer {
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  align-items: center;
-  gap: 20px;
   justify-content: center;
-  background: #F1F1F6 0% 0% no-repeat padding-box;
-  border-radius: 39px;
-  opacity: 1;
+  width: fit-content;
+  align-items: center;
+  background-color: #F1F1F6;
+  padding: 10px 20px;
+  border-radius: 100px;
+  
 }
-.easy {
+
+.tab {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #667085;
   display: flex;
   align-items: center;
-  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.fast {
+
+.tab:hover {
+  color: #000;
+}
+
+.activeTab {
   display: flex;
   align-items: center;
-  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #0f9dff;
+  color: #0f9dff;
+  border-radius: 100px;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
-.currency {
+
+.content {
+  display: none;
+  position: relative;
+}
+.activeContent {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 20px; /* Adjust size for icon */
+}
+
+
+.mainSectionleft {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  gap: 50px;
+  width: 400px;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ctaButton:hover {
+  background-color: #005ea6;
+}
+
+.dashboard {
+  margin-top: 2rem;
 }
 
 /* Wyslac Scroll */
