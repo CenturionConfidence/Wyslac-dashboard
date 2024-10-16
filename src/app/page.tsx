@@ -3,6 +3,10 @@ import wyslacLogo from './assets/wyslac-logo.png'
 import dashboard from './assets/dashboard-pic.png'
 import CountryFlag from './assets/countryFlag.png'
 import heroCaptionImage from './assets/Group 23.png'
+import heroCaptionImage1 from './assets/Rectangle 7262-1.png'
+import graffitiImage from './assets/Path 68370.png'
+import graffitiImage1 from './assets/Path 68377.png'
+import demoUI from './assets/Mask Group 269.png'
 // import demoUi from './assets/Mask Group 269.png'
 
 import BorderFinance from './components/borderFinance'
@@ -64,6 +68,16 @@ export default function Home() {
 
                 </div>
             </div>
+
+
+            <Image 
+                className={styles.impactGraffiti}
+                src={graffitiImage} 
+                alt='hero-caption'/>
+            <div className={styles.Caption}>
+                    <Image src={heroCaptionImage1} alt='hero-caption'/>
+                    <div className={styles.heroCaptionTitle}>WYSLAC/&apos;S IMPACT</div>
+            </div>
             <div className={styles.wyslacImpact}>
                 <div className={styles.wyslacImpactHeader}>Our impact on businesses by the number…</div>
                 <div className={styles.wyslacp}>Explore the measurable success we’ve brought to businesses worldwide, 
@@ -82,6 +96,14 @@ export default function Home() {
 
                 {/* Wyslac Features */}
 
+            <Image 
+                className={styles.featuresGraffiti}
+                src={graffitiImage1} 
+                alt='hero-caption'/>
+            <div className={styles.featureCaption}>
+                    <Image src={heroCaptionImage} alt='hero-caption'/>
+                    <div className={styles.heroCaptionTitle}>Cross-border finance</div>
+            </div>
             <div className={styles.wyslacFeatures}>
                 <div className={styles.wyslacFeaturesHeader}>Powerful features to elevate your business</div>
                 <div className={styles.wyslacFeaturesp}>Access a powerful set of tools built to simplify your workflow, boost productivity, and fuel business growth. 
@@ -107,9 +129,9 @@ export default function Home() {
                     Request a Demo <span>&#8594;</span>
                     </button>
                 </div>
-                {/* <div className={styles.demoImage}>
-                    <Image src={demoUi} alt="Demo UI"/>
-                </div> */}
+                    <div className={styles.demoImage}>
+                        <Image src={demoUI} alt="Demo UI"/>
+                    </div>
             </div>
             <Footer />
         </div> 

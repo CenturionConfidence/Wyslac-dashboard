@@ -86,6 +86,16 @@
 
 /* Wyslac Impact Section */
 
+.impactGraffiti {
+  margin-left: -50px;
+  margin-bottom: -100px;
+}
+.Caption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .wyslacImpact {
   display: flex;
   flex-direction: row;
@@ -134,6 +144,19 @@
 }
 
 /* Wyslac Features */
+
+.featuresGraffiti {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -100px;  
+}
+.featureCaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 .wyslacFeatures {
   display: flex;
@@ -194,13 +217,23 @@
 
 /* Wyslac border Finance */
 
+.financeGraffiti {
+  margin-bottom: -150px;
+}
+.financeCaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
 .borderFinance {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .borderFinanceHeader {
-  margin-top: 100px;
   font-size: 40px;
   font-weight: bold;
 }
@@ -214,51 +247,137 @@
   color: #000A4A;
   opacity: 0.6;
 }
-.wyslacBorderFinance {
-  display: flex; /* to align the boxes side by side */
-  justify-content: space-between; /* to space out the divs */
-  flex-wrap: wrap; /* allows it to be responsive */
-  padding: 20px; /* space around the entire container */
-  border-radius: 10px; /* smooth corners */
+/* Container Grid for large screens */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Two columns: 2/5 for left, 3/5 for right */
+  gap: 20px;
+  padding: 20px;
 }
 
-.wyslacBorderFinanceImage {
-  flex-basis: 32%; /* each section takes about a third of the width */
-  background-color: white; /* background for the individual cards */
-  border: 1px solid #e0e0e0; /* light border around individual cards */
-  padding: 20px; /* spacing inside each card */
-  margin-bottom: 20px; /* spacing between rows */
-  border-radius: 10px; /* rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+/* Left Section Styles */
+.leftSection {
+  background-color: #f5f7fa; /* Light background similar to your image */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.wyslacBorderFinanceImageTitle {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #2e3a59; /* dark blue text */
+/* Right Section Grid */
+.rightSection {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two equal rows */
+  gap: 20px;
 }
 
-.wyslacBorderFinanceImagep {
-  font-size: 14px;
-  color: #555; /* light gray text */
-  margin-bottom: 20px;
+/* Box Styles for Right Section */
+.topBox, .bottomBox {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.financeImage1 {
-  width: 100%; /* ensure the image fits within its container */
-  height: auto; /* maintain aspect ratio */
-  border-radius: 10px; /* rounded image corners */
+/* Typography */
+.borderFinanceTitle {
+  top: 4787px;
+  left: 134px;
+  width: 451px;
+  height: 31px;
+  /* UI Properties */
+  color: var(--unnamed-color-000a4a);
+  text-align: left;
+  font-size: 24px;
+  font: normal normal medium 24px/31px TT Firs Text Trial;
+  letter-spacing: 0px;
+  color: #000A4A;
+  opacity: 1;
 }
 
-/* Add media queries to handle responsiveness */
-@media (max-width: 768px) {
-  .wyslacBorderFinanceImage {
-      flex-basis: 100%; /* full width on smaller screens */
+.borderFinanceTitlep {
+  top: 4837px;
+  left: 134px;
+  width: 528px;
+  height: 70px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0px;
+  opacity: 1;color: #666;
+}
+
+/* Card Styling for Wallet */
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Status Text */
+.active {
+  color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column for tablets */
+    gap: 20px;
+  }
+
+  .rightSection {
+    grid-template-rows: auto; /* Automatically adjust row height */
   }
 }
 
+@media(max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack all sections vertically on mobile */
+    padding: 10px;
+  }
+
+  .leftSection, .topBox, .bottomBox {
+    margin-bottom: 20px; /* Space between sections */
+  }
+
+  .leftSection {
+    padding: 15px;
+  }
+
+  .topBox, .bottomBox {
+    padding: 15px;
+  }
+}
+
+@media(max-width: 480px) {
+  .borderFinanceTitle {
+    font-size: 1.5rem;
+  }
+
+  .borderFinanceTitlep {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 8px;
+  }
+}
+
+
 /* Wyslac Testimonials */
+
+.testimonialGraffiti {
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+.testimonialCaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .testimonialsContainer {
   padding: 40px;
@@ -302,8 +421,10 @@
 
 /* Facts Section */
 .facts {
-  width: 500px;
-  background: linear-gradient(135deg, #e409f6, #a133ff); /* Pink gradient */
+  background: url('./assets/Group\ 52730.png') 
+    no-repeat 
+    center center; 
+  background-size: cover;
   border-radius: 16px;
   padding: 30px;
   flex-basis: 10%; /* Make this take 40% of the available width */
@@ -317,6 +438,7 @@
   height: 13px;
   color: var(--unnamed-color-ffffff);
   text-align: left;
+  font-size: 13px;
   font: normal normal medium 13px/26px LT Superior;
   letter-spacing: 0.91px;
   color: #FFFFFF;
@@ -359,16 +481,17 @@
 /* Customer Stories Section */
 .stories {
   flex-basis: 70%; /* This takes 55% of the available width */
-  background: url('/path-to-image/customer-stories.png') no-repeat center center;
+  background: url('./assets/Group\ 52729.png') 
+    no-repeat 
+    center center;
   background-size: cover;
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px;
   color: white;
   position: relative;
 }
 
 .customerStories {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
   border-radius: 16px;
   padding: 30px;
   color: white;
@@ -414,6 +537,8 @@
 }
 
 .testimonialCard {
+  display: flex;
+  flex-direction: column;
   background: white;
   border: 2px solid #dcdcdc;
   border-radius: 16px;
@@ -421,7 +546,6 @@
   max-width: 600px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
   margin-bottom: 20px;
 }
 
@@ -558,7 +682,7 @@
 /* Demo UI Section */
 
 .demoSection {
-  min-height: 700px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -629,9 +753,6 @@
 }
 
 .demoImage {
-  
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 40px;
   opacity: 1;
   backdrop-filter: blur(13px);
@@ -641,12 +762,19 @@
 /* Wyslac Footer */
 
 .footer {
-
+  display: flex;
+  flex-direction: column;
   padding: 50px 0;
   text-align: center;
 }
+.footerHead {
+  display: flex;
+  flex-direction: column;
+}
 
-.container {
+.footercontainer {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;

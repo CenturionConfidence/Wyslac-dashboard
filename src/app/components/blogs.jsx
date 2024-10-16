@@ -12,25 +12,33 @@ export default function BlogSection () {
       title: 'Wyslac: Changing the landscape of cross-border money transfer',
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
-      image: {blogImage1},
+      image: <Image
+        src={blogImage1}
+        alt='Wyslac: Changing the landscape of cross-border money transfer'
+    />
     },
     {
       id: 2,
       title: '7 Tips for Sending Money Across Borders Safely and Securely with Wyslac',
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
-      image: {blogImage2},
+      image: <Image
+        src={blogImage2}
+        alt='7 Tips for Sending Money Across Borders Safely and Securely with Wyslac'
+    />
     },
     {
       id: 3,
       title: 'The Benefits of Using Wyslac Services for International Money Transfers',
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
-      image: {blogImage3},
+      image: <Image
+        src={blogImage3}
+        alt='7 Tips for Sending Money Across Borders Safely and Securely with Wyslac'
+    />
     },
   ];
 
-  console.log(blogPosts.image)
 
   return (
     <section className={styles.blogSection}>
@@ -38,10 +46,7 @@ export default function BlogSection () {
       <div className={styles.blogContainer}>
         {blogPosts.map((post) => (
           <div key={post.id} className={styles.blogCard}>
-            <Image
-              src={post.image}
-              alt={post.title}
-            />
+            {post.image}
             <div className={styles.blogInfo}>
               <div className={styles.blogInfoStats}>
                 <div className={styles.blogInfoAuthor}>{post.author}</div>
