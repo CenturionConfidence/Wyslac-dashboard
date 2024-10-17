@@ -33,7 +33,7 @@ const testimonials = [
         name: "Tage Kene-Okafor",
         position: "CEO, Voidloop Shipping Enterprise Limited",
         image: <Image
-            src={customerImage1}
+            src={customerImage2}
             alt='Tage Kene-Okafor'
             width={50}
             height={50}
@@ -45,7 +45,7 @@ const testimonials = [
         name: "Tage Kene-Okafor",
         position: "CEO, Voidloop Shipping Enterprise Limited",
         image: <Image
-            src={customerImage1}
+            src={customerImage3}
             alt='Tage Kene-Okafor'
             width={50}
             height={50}

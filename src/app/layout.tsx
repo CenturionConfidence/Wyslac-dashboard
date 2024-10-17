@@ -6,9 +6,12 @@ const bodyFont = localFont({
   src: [
     { 
       path: "./fonts/TT-firs-Text-Trial-Bold.ttf",
-      weight: "500"
+      weight: "500",
+      
     }
-  ]
+    
+  ],
+  variable: '--font-bodyFont-'
 });
 const headerFont = localFont({
   src: [

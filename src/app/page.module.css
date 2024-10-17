@@ -148,6 +148,7 @@
   flex-direction: column;
 }
 
+
 .featuresGraffiti {
   margin-left: auto;
   margin-right: auto;
@@ -259,6 +260,7 @@
 }
 
 .description {
+  font-family: var(--font-bodyFont-);
   color: #555;
   margin-bottom: 2rem;
 }
