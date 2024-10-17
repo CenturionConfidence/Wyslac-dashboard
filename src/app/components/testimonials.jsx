@@ -6,6 +6,8 @@ import customerImage2 from '../assets/Ellipse 6416-1.png'
 import customerImage3 from '../assets/Ellipse 6416-2.png'
 import testimonialGraffiti from '../assets/Path 65966.png'
 import heroCaptionImage3 from '../assets/Rectangle 7262-2.png'
+import navBtn from '../assets/Group 52721.png'
+import navBtn1 from '../assets/Group 52722.png'
 import { useState } from 'react';
 import styles from '../page.module.css';
 
@@ -129,25 +131,28 @@ const testimonials = [
 
 
             <div className={styles.carouselContainer}>
+                <div className={styles.testimonialPage}>
                     {testimonials.map((testimonial) => {
-                        return <div 
-                            key={testimonial}
-                            className={styles.testimonialCard}>
-                        <p className={styles.quote}>
-                            {currentTestimonial.quote}
-                        </p>
-                        <div className={styles.authorInfo}>
-                            {currentTestimonial.image}
-                            <div>
-                                <p className={styles.authorName}>{currentTestimonial.name}</p>
-                                <p className={styles.authorPosition}>{currentTestimonial.position}</p>
+                            return <div 
+                                key={testimonial}
+                                className={styles.testimonialCard}>
+                            <p className={styles.quote}>
+                                {currentTestimonial.quote}
+                            </p>
+                            <div className={styles.authorInfo}>
+                                {currentTestimonial.image}
+                                <div>
+                                    <p className={styles.authorName}>{currentTestimonial.name}</p>
+                                    <p className={styles.authorPosition}>{currentTestimonial.position}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    })}
+                        })}
+                </div>
+                    
                 <div className={styles.carouselControls}>
-                    <button onClick={handlePrev} className={styles.prevBtn}>&lt;</button>
-                    <button onClick={handleNext} className={styles.nextBtn}>&gt;</button>
+                    <Image onClick={handlePrev} src={navBtn} alt='navBtn'/>
+                    <Image onClick={handleNext} src={navBtn1} alt='navBtn'/>
                 </div>
             </div>
         </div>
