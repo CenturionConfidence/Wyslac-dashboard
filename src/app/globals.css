@@ -8,20 +8,18 @@
 
 
 
-  html, body {
+  * {
     margin: 0;
     
   }
   
   body {
-    background: url('./assets/background-color.png')
-      no-repeat;
     font-family: 'MyCustomFont';
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    /* min-height: 100vh;  */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
