@@ -7,7 +7,7 @@ import heroCaptionImage1 from './assets/Rectangle 7262-1.png'
 import graffitiImage from './assets/Path 68370.png'
 import graffitiImage1 from './assets/Path 68377.png'
 import demoUI from './assets/Mask Group 269.png'
-// import backgroundImage from './assets/background-color.png'
+import backgroundImage from './assets/background-color.png'
 // import demoUi from './assets/Mask Group 269.png'
 
 import BorderFinance from './components/borderFinance'
@@ -42,8 +42,8 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
+            
         <div className={styles.page}>
-            {/* <Image src={backgroundImage} alt="wyslac Logo" /> */}
             <div className={styles.nav}> 
               <Image src={wyslacLogo} alt="wyslac Logo" />
                 <div className={styles.auth}>

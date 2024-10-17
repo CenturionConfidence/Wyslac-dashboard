@@ -1,4 +1,5 @@
 
+
 .page {
   max-width: 1200px;
   text-align: left;
@@ -14,6 +15,8 @@
 }
 
 /* Navigation for website bigger screen */
+
+
 
 .nav {
   display: flex;
@@ -327,10 +330,10 @@
 }
 /* Container Grid for large screens */
 .container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 2fr 3fr; /* Two columns: 2/5 for left, 3/5 for right */
   gap: 20px;
-  padding: 20px;
 }
 
 /* Left Section Styles */
@@ -723,6 +726,10 @@
   transition: transform 0.3s ease;
   flex: 1 1 calc(33% - 20px);
   max-width: calc(33% - 20px);
+}
+.image {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .blogCard:hover {

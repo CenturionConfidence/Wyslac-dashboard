@@ -13,6 +13,7 @@ export default function BlogSection () {
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
       image: <Image
+        className={styles.image}
         src={blogImage1}
         alt='Wyslac: Changing the landscape of cross-border money transfer'
     />
@@ -23,6 +24,7 @@ export default function BlogSection () {
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
       image: <Image
+        className={styles.image}
         src={blogImage2}
         alt='7 Tips for Sending Money Across Borders Safely and Securely with Wyslac'
     />
@@ -33,6 +35,7 @@ export default function BlogSection () {
       date: 'September 1, 2024',
       author: 'Idan Okoroabianje',
       image: <Image
+        className={styles.image}
         src={blogImage3}
         alt='7 Tips for Sending Money Across Borders Safely and Securely with Wyslac'
     />
