@@ -13,7 +13,7 @@ const bodyFont = localFont({
 const headerFont = localFont({
   src: [
     { 
-      path: "./fonts/TT-firs-Text-Trial-Medium.ttf",
+      path: "./fonts/LTSuperior-Medium.otf",
       weight: "900"
     }
   ]
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${headerFont.className} ${bodyFont.className}`} >
+      <body className={`${headerFont.className} ${bodyFont.className}` } >
         {children}
       </body>
     </html>
