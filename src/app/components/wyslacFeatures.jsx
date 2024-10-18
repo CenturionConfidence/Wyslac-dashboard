@@ -11,16 +11,13 @@ import dashboard from '../assets/Group 52728.png'
 
 
 function WyslacFeatures() {
-    const [toggleFeature, setToggleFeature] = useState(1);
-
-    const handleTabChange = (index) => {
-      setToggleFeature(index)
-    }
+    
 
     
 
-    const featuresElememt = [
+    const featuresElement = [
         {
+            id: 1,
             imageHead: <Image src={Easy} alt="Easy-payment"/>,
             title: 'EASY PAYMENT',
             header: 'Cross-border Payments made easy',
@@ -28,6 +25,7 @@ function WyslacFeatures() {
             imageSrc: <Image src={dashboard} alt="Easy-payment"/>
         },
         {
+            id: 2,
             imageHead: <Image src={Currency} alt="Easy-payment"/>,
             title: 'DIFFERENT CURRENCY',
             header: 'Cross-border Payments made easy',
@@ -35,6 +33,7 @@ function WyslacFeatures() {
             imageSrc: <Image src={dashboard} alt="Different-currency"/>
         },
         {
+            id: 3,
             imageHead: <Image src={Fast} alt="Easy-payment"/>,
             title: 'FAST AND EFFICIENT',
             header: 'Cross-border Payments made easy',
@@ -42,6 +41,13 @@ function WyslacFeatures() {
             imageSrc: <Image src={dashboard} alt="fast-payment"/>
         }
     ]
+
+    const [toggleFeature, setToggleFeature] = useState(featuresElement.id);
+
+    const handleTabChange = (id) => {
+      setToggleFeature(id)
+      console.log(id)
+    }
 
     return(
         <>
@@ -65,11 +71,11 @@ function WyslacFeatures() {
 
           {/* Main Content Section */}
           
-          {featuresElememt.map((feature) => (
+          {featuresElement.map((feature) => (
             
             <main 
-            key={feature}
-              className={toggleFeature === 2 ? `${styles.activeContent}` : `${styles.content}`}>
+            key={feature.id}
+              className={toggleFeature === featuresElement.id ? styles.activeContent : styles.content}>
             <div className={styles.mainSectionleft}>
               {feature.imageHead}
               <h1 className={styles.title}>{feature.header}</h1>

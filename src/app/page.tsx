@@ -7,7 +7,8 @@ import heroCaptionImage1 from './assets/Rectangle 7262-1.png'
 import graffitiImage from './assets/Path 68370.png'
 import graffitiImage1 from './assets/Path 68377.png'
 import demoUI from './assets/Mask Group 269.png'
-import backgroundImage from './assets/background-color.png'
+import heropImage from './assets/Group 52051.png'
+// import backgroundImage from './assets/background-color.png'
 // import demoUi from './assets/Mask Group 269.png'
 
 import BorderFinance from './components/borderFinance'
@@ -20,6 +21,7 @@ import styles from './page.module.css';
 
 export default function Home() {
       const ImageSrc = <Image src={CountryFlag} alt="Country-flag" />
+      const heropimg = <Image src={heropImage} alt="Country-flag" />
        const stats = [
         {
             number: `${24}hrs`,
@@ -42,7 +44,6 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
-            
         <div className={styles.page}>
             <div className={styles.nav}> 
               <Image src={wyslacLogo} alt="wyslac Logo" />
@@ -58,9 +59,10 @@ export default function Home() {
                     <div className={styles.heroCaptionTitle}>Cross-border finance</div>
                 </div>
                 <h1 className={styles.heroHeader}>Pay your supplies in over 100 countries {ImageSrc} with wyslac</h1>
-                <div className={styles.wyslacp}>Expand your business reach by making international payment, ensuring 
+                <div className={styles.herop1}>Expand your business reach by making international payment, ensuring 
                     your suppliers recieve funds promptly, no matter where they are located.
                 </div>
+                <div className={styles.herop2}>press {heropimg} to request access</div>
             </div>
             <div className={styles.image1}>
               <Image src={dashboard} alt="dashbord-pic" />
